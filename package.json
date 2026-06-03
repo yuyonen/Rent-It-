@@ -1,0 +1,22 @@
+{
+  "name": "rent-it",
+  "version": "0.1.0",
+  "description": "Palveluiden markkinapaikka",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "keywords": [
+    "services",
+    "marketplace",
+    "rental"
+  ],
+  "author": "yuyonen",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
